@@ -1,0 +1,170 @@
+* {
+    font-family: sans-serif;
+    /* background-color: #d4d2d2; */
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    position:relative;
+   
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #23b88b;
+    z-index: 100;
+}
+
+input {
+    background-color: #ededed;
+}
+
+.city {
+    height: 30px;
+    width: 250px;
+    margin-top: 8%;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #a3a2a2;
+    border: 1px solid #a3a2a2;
+}
+
+.submit {
+    background-image: url(img/lupa.svg);
+    background-repeat: no-repeat;
+    border: none;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    position: relative;
+    left: -12%;
+}
+
+.nav {
+    display: flex;
+    background-color: #303030;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    color: white;
+    font-size: 18px;
+    background-color: #303030;
+}
+
+li:hover {
+    border-bottom: 2px solid #23b88b;
+    color: #a19f9f;
+    margin-bottom: 1px;
+    transition: all .2s;
+}
+
+.box {
+    border: 1px solid #e5e3e3;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 0;
+    background-color: #ededed;
+    opacity: .6;
+}
+
+h3 {
+    color: #23b88b;
+    background-color: #ededed;
+}
+
+.current_title{
+    background-color: #ededed;
+    color: #757575;
+}
+
+.current_text{
+    background-color: #ededed;
+}
+
+.current_temp{
+    background-color: #ededed;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.current_city{
+    background-color: #ededed;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.weather{
+    background-color: #ededed;
+    color: #757575;
+    font-size: 20px;
+}
+
+.block{
+    background-color: #ededed;
+    text-align: center;
+}
+
+.blocks{
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+.stars, .twinkling {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index: -1;
+}
+
+.stars {
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+}
+
+.twinkling{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+  }
+  
+  
